@@ -10,11 +10,11 @@ YAML.load_file(file_path).each do |english_name, japanese_emoticon|
    library["get_emoticon"][japanese_emoticon[0]] = japanese_emoticon[1]
   end
 
-library  # code goes here
+library
 end
 
 def get_japanese_emoticon
-  # code goes here
+  
 end
 
 def get_english_meaning
