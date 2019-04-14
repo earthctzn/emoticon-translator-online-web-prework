@@ -13,8 +13,8 @@ YAML.load_file(file_path).each do |english_name, japanese_emoticon|
 library
 end
 
-def get_japanese_emoticon(file_path, emoticon)
-  library = load_library(file_path)
+def get_japanese_emoticon(path, emoticon)
+  library = load_library(path)
   grin_emoticon = library["get_emoticon"][emoticon]
     if grin_emoticon
     grin_emoticon
