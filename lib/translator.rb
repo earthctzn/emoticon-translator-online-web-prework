@@ -6,6 +6,7 @@ require "yaml"
 def load_library(path)
 lib = {"translate" => {},
 "emoji" => {}
+}
 YAML.load_file(path).each do |eng, jap|
   lib["translate"][jap[1]] = english 
   lib["emoji"][jap[1]] = jap[1]
